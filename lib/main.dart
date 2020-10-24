@@ -32,14 +32,14 @@ class _HomeState extends State<Home> {
       double weight = double.parse(weightController.text);
       double height = double.parse(heightController.text) / 100;
       double imc = weight / (height * height);
-      double pesoIdealMin = (18.6 * (height * height)) - weight;
+      double pesoIdealMin = (18.61 * (height * height)) - weight;
       double pesoIdealMax = (24.89 * (height * height)) - weight;
       String pesoAPerder =
-          "\n Você precisa perder ${pesoIdealMax.abs().toStringAsPrecision(3)} Kg";
+          "\n Você precisa perder ${pesoIdealMax.abs().toStringAsPrecision(3)} Kg para entrar na faixa ideal";
 
       if (imc < 18.6) {
         _infoText =
-            "Abaixo do peso (${imc.toStringAsPrecision(3)})\nVocê precisa ganhar ${pesoIdealMin.toStringAsPrecision(3)} Kg";
+            "Abaixo do peso (${imc.toStringAsPrecision(3)})\nVocê precisa ganhar ${pesoIdealMin.toStringAsPrecision(3)} Kg para entrar na faixa ideal";
       } else if (imc >= 18.6 && imc < 24.9) {
         _infoText = "Peso ideal (${imc.toStringAsPrecision(3)})";
       } else if (imc >= 24.9 && imc < 29.9) {
