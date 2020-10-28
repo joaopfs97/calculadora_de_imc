@@ -8,3 +8,6 @@ IMC = Peso / altura * altura
 A fórmula utiliza altura em metros, portanto o próprio aplicativo faz a conversão de medida.
 
 Foi implementado além do proposto em aula, onde se o usuário apresenta IMC fora do ideal, o aplicativo diz quantos Kg o mesmo deve ganhar ou perder para entrar na faixa ideal de peso.
+<p align ="center">
+<img src="/images/app_em_uso.gif">
+</p>
